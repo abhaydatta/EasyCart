@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">عربة جروسير</string>
+    <string name="splash_welcome_text">مرحبا بك في</string>
+    <string name="splash_app_name">عربة جروسير</string>
+    <!-- Login and SingUp !-->
+    <string name="enter_mobile_text">أدخل رقم الهاتف المتحرك المكون من 10 أرقام</string>
+    <string name="login_input_text">أدخل رقم الهاتف المحمول / معرف البريد الإلكتروني</string>
+    <string name="or_text">أو</string>
+    <string name="text_login_with">تسجيل الدخول مع</string>
+    <string name="text_fb">موقع التواصل الاجتماعي الفيسبوك</string>
+    <string name="text_google">جوجل</string>
+
+    <!-- Pin Screen !-->
+    <string name="enter_pincode">أدخل الرمز السري الخاص بك</string>
+    <string name="button_location_test">الموقع الحالي</string>
+
+    <!-- Vendor List Screen !-->
+    <string name="select_vendor">حدد البائع</string>
+    <string name="select_vendor_query_hint">ابحث عن البائع</string>
+    <string name="text_select">تحديد</string>
+
+
+    <!-- Otp SignUp Screen !-->
+    <string name="text_signup_otp_title">التسجيل باستخدام OTP</string>
+    <string name="text_signup_otp_subtitle">يرجى التحقق من OTP المرسل إلى رقم هاتفك المحمول</string>
+    <string name="text_change_button">يتغيرون</string>
+    <string name="text_enter_otp">أدخل OTP</string>
+    <string name="text_resend_otp">إعادة إرسال OTP</string>
+    <string name="text_signuup_button">سجل</string>
+    <string name="text_otp_success">تم إرسال OTP بنجاح</string>
+
+    <string name="text_location">موقعك</string>
+    <string name="text_continue">استمر</string>
+    <string name="text_bank">بنك</string>
+    <string name="text_offer">عروض</string>
+    <string name="text_daily_essenetail">الضروريات اليومية</string>
+    <string name="text_trending">الشائع</string>
+    <string name="text_products">منتجات</string>
+    <string name="text_query">إذا كان لديك أي استفسار يرجى الاتصال بنا</string>
+    <string name="text_copyright">2020-2021 COPY RIGHT BY GROCEER CART POWERED BY ADROTI IT SOLUTION PRIVATE LIMITED</string>
+    <string name="select_drawer_search">ابحث هنا</string>
+    <string name="text_delivery">Tomarrow 9:00 ص حتى 1:00 م</string>
+
+    <string name="text_hello">مرحبا</string>
+    <string name="text_delivery_status">خانات التوصيل</string>
+</resources>

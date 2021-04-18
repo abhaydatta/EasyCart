@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bannerCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="5dp"
+        app:cardMaxElevation="7dp"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textSliderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="FRESH"
+                android:textAllCaps="true"
+                android:textColor="@color/splash_app_name_color"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/imgView_slide"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgView_slide"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_groceer_logo" />
+
+            <TextView
+                android:id="@+id/textSliderSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="FRESH"
+                android:textColor="@color/pin_location_button_bg"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textSliderTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textSliderTitle" />
+
+            <TextView
+                android:id="@+id/textSliderTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="82dp"
+                android:layout_marginRight="82dp"
+                android:text="DRESH VEGETABLES"
+                android:textAllCaps="true"
+                android:textColor="@color/signup_button_color"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textSliderSubTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textSliderSubTitle" />
+
+            <Button
+                android:id="@+id/btnShop"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_shop_bg"
+                android:text="Show Now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textSliderSubTitle"
+                app:layout_constraintTop_toBottomOf="@id/textSliderTitle3"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:id="@+id/imgTopTwo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />-->
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

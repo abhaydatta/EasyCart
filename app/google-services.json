@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1035462508980",
+    "firebase_url": "https://groceer-cart-1599903996385.firebaseio.com",
+    "project_id": "groceer-cart-1599903996385",
+    "storage_bucket": "groceer-cart-1599903996385.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035462508980:android:e642b94f9f4f415a8ff2e1",
+        "android_client_info": {
+          "package_name": "com.GroceerCart.sa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035462508980-n70k8ejr8gu2kjcjiivsa6jb20qe6bv4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GroceerCart.sa",
+            "certificate_hash": "383b4859e54221580e7992ded2ddcf7c9d132007"
+          }
+        },
+        {
+          "client_id": "1035462508980-ufrjij1osq0g99i8qm3o2c323of7u5ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGHsJLaJWOX6w_ZYHz2iTVYq9CM64V5Pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035462508980-ufrjij1osq0g99i8qm3o2c323of7u5ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

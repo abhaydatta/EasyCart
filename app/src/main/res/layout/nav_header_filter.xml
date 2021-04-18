@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center|center_vertical"
+        android:background="@color/pin_location_button_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="FILTER"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"></TextView>
+
+         <ImageView
+             android:layout_width="20dp"
+             android:layout_height="30dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="50dp"
+             android:src="@drawable/ic_back_white"></ImageView>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:gravity="right"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp"
+             android:text="BACK"
+             android:textColor="@color/white"
+             android:textSize="15sp"></TextView>
+    </RelativeLayout>
+    <!--<SearchView
+        android:id="@+id/searchViewapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/select_drawer_search"
+
+        />-->
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_subtitle" />-->
+</LinearLayout>

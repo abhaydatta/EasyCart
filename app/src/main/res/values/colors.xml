@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="splash_welcome_text_color">#262626</color>
+    <color name="splash_app_name_color">#000000</color>
+    <color name="pin_location_button_bg">#f7be29</color>
+    <color name="pin_location_button_border">#c39314</color>
+    <color name="color_white_text">#FFFFFF</color>
+    <color name="white">#FAFAFA</color>
+    <color name="colorBlue">#2b44ff</color>
+    <color name="h1black">#323542</color>
+    <color name="editTextBottomHint">#7c8ba2</color>
+    <color name="change_button_color">#f7be29</color>
+    <color name="singup_button_border_color">#0f818a</color>
+    <color name="signup_button_color">#5abfc7</color>
+    <color name="signup_alert_color">#d50808</color>
+    <color name="thumbnail_color">#d5ebed</color>
+    <color name="select_colot">#F4F0F0</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_centerInParent="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iconimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:drawable/arrow_down_float"
+       ></ImageView>
+
+    <com.GroceerCart.sa.ui.CircularImageView
+        android:id="@+id/itemImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_search"
+        ></com.GroceerCart.sa.ui.CircularImageView>
+
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="?attr/listPreferredItemPaddingRight"
+        android:textColor="#1f2124"
+        android:textSize="16sp"
+        android:text="FoodGrains , Oil and Masala"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/itemImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"
+        app:layout_constraintVertical_bias="0.8"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

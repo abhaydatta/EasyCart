@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg"
+    tools:context=".activity.GroceerOrderListActivity">
+
+    <TextView
+        android:id="@+id/tvDeliveryDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELIVERY DETAIL"
+        android:textColor="@color/splash_welcome_text_color"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    <LinearLayout
+        android:id="@+id/layout_top_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveryDetail">
+        <Button
+            android:id="@+id/btnDeliveryAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_delivery"
+            android:text="DELIVERY ADDRESS"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/btnDeliverySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="DELIVERY SLOT"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/button_delivery"
+            app:layout_constraintTop_toBottomOf="@+id/btnDeliveryAddress"/>
+    </LinearLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/orderBottomLayout"
+        app:layout_constraintTop_toBottomOf="@id/layout_top_cart">
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/orderRecyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+     </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/orderBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlaceOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="NET TOTAL"
+            android:textSize="20sp"
+            android:textColor="@color/pin_location_button_bg"
+            />
+        <TextView
+            android:id="@+id/tvOrderNetTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Rs. 0.0"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/pin_location_button_bg"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shop_bg"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

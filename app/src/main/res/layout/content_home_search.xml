@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <include
+        android:id="@+id/llProgressBar"
+        android:visibility="gone"
+        layout="@layout/progress_bar_layout"/>
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:iconifiedByDefault="false"
+        android:hint="Search Here"
+        app:queryHint="Search Product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/searchScanner"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_scanner"></ImageView>
+
+    <GridView
+        android:id="@+id/searchGridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

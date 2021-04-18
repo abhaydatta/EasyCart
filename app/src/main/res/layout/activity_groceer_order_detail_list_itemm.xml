@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linearOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Order No"
+                android:textColor="@color/h1black"
+                android:layout_weight="1"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textOrderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/h1black"
+                android:layout_weight="1"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Transaction Date"
+                android:layout_weight="1"
+                android:textColor="@color/h1black"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textTxDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/h1black"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@color/h1black"
+                android:layout_weight="1"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/h1black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="SubTotal"
+                android:textColor="@color/h1black"
+                android:layout_weight="1"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textSubTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/h1black"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:layout_weight="1"
+                android:textColor="@color/h1black"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_weight="1"
+                android:textColor="@color/h1black"
+                android:gravity="center"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:layout_weight="1"
+                android:textColor="@color/h1black"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textTax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textColor="@color/h1black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_weight="1"
+                android:textColor="@color/h1black"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/h1black"
+                android:layout_weight="1"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOrderHistory"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearOrder"
+        android:background="@drawable/button_location"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Show Order History"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

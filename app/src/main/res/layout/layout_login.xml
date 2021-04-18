@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_screen_bg"
+    >
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12"
+            app:srcCompat="@drawable/ic_groceer_logo" />
+
+        <EditText
+            android:id="@+id/edtMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edt_enter_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ems="10"
+            android:hint="@string/enter_mobile_text"
+            android:inputType="phone"
+            android:textColor="@color/splash_app_name_color"
+            android:textColorHint="@color/splash_app_name_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.362" />
+
+        <View
+            android:id="@+id/viewLeft"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/splash_app_name_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_text"
+            android:textColor="@color/splash_app_name_color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewRight"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/splash_app_name_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login_with"
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.651" />
+
+        <Button
+            android:id="@+id/img_fb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.81"
+            android:visibility="gone"
+            android:background="@drawable/ic_facebook"
+            />
+
+        <TextView
+            android:id="@+id/txt_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/text_fb"
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            app:layout_constraintVertical_bias="0.88" />
+
+        <Button
+            android:id="@+id/img_google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_google"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/edtMobileNo"
+            app:layout_constraintHorizontal_bias="0.584"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.811" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/text_google"
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_google"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_google"
+            app:layout_constraintVertical_bias="0.164" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_voice_search"></ImageView>
+
+    <ImageView
+        android:id="@+id/imgScanner"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_scanner"></ImageView>
+
+    <ImageView
+        android:id="@+id/imgSearch"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgScanner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search"></ImageView>
+
+
+
+    <EditText
+        android:id="@+id/edtHomeSearch"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"
+        android:textColor="#344134"
+        android:textSize="15sp"
+        android:paddingRight="5dp"
+        android:hint="Search Here"
+        android:textColorHint="#000000"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintVertical_bias="0.8"></EditText>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

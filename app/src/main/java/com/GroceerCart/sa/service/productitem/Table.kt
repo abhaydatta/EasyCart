@@ -1,0 +1,33 @@
+package com.GroceerCart.sa.service.productitem
+
+data class Table(
+    val clientId: Int,
+    val comboName: String,
+    val imagePath: String,
+    val isSpicy: Boolean,
+    val isVeg: Boolean,
+    val name: String,
+    val offerPrice: Double,
+    val productId: Int,
+    val product_id: Int,
+    val products_barCode: String,
+    val products_categoryId: Int,
+    val products_code: String,
+    val products_description: String,
+    val products_isMatrix: Boolean,
+    val products_maxStockLevel: Int,
+    val products_minStockLevel: Int,
+    val products_parentId: Int,
+    val products_productInfo: String,
+    val products_purchasePrice: Int,
+    val products_quantity: Int,
+    val products_salesmenCommission: Int,
+    val products_subcategoryId: Int,
+    val products_uomId: Int,
+    val rating: Int,
+    val sellingPrice: Double,
+    val uomName: String,
+    val uomProducts: List<UomProducts>,
+    val uomProductsCount: Int,
+    val cartStockInHand :Int
+)

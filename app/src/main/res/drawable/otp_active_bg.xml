@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/login_screen_bg">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pin_location_button_border"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/login_screen_bg"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Shop By Categories"
+        android:textColor="@color/splash_app_name_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <Button
+            android:id="@+id/btnViewAllProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shop_bg"
+            android:text="View All Products"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_bg_transperent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sorting Items"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/splash_app_name_color"
+                android:padding="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:srcCompat="@drawable/com_facebook_tooltip_black_bottomnub" />
+
+        </LinearLayout>
+
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shop_bg"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:text="View All Products"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />-->
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

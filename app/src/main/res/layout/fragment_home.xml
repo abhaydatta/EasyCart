@@ -1,0 +1,294 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:context="com.GroceerCart.sa.activity.ui.home.HomeFragment">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeProgressBar"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/home_top_layout" />
+    <include
+        android:id="@+id/include_search_layout"
+        layout="@layout/home_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_search_layout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:scrollbars="vertical">
+
+            <com.GroceerCart.sa.ui.AutoScrollViewPager
+                android:id="@+id/top_pager_slider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                ></com.GroceerCart.sa.ui.AutoScrollViewPager>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="5dp"
+                app:tabBackground="@drawable/viewpager_tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            <com.GroceerCart.sa.ui.ExpandableHeightGridView
+                android:id="@+id/home_gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/vpi__bright_foreground_disabled_holo_dark"
+                android:horizontalSpacing="1dp"
+                android:isScrollContainer="false"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/color_white_text"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txt_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textSize="20sp"></TextView>
+
+            </LinearLayout>
+
+            <!--<include layout="@layout/home_bank_offer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:layout_marginTop="15dp"></include>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler__offers_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/signup_button_color"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/text_daily_essenetail"
+                    android:textColor="@color/color_white_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler__horizontal_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txt_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler__trending_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/pin_location_button_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_support" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_query"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="123-456-7890"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txt_topBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler__top_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:gravity="center"
+                android:padding="15sp"
+                android:text="@string/text_copyright"
+                android:textColor="@color/splash_app_name_color"
+                android:textSize="10sp"></TextView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

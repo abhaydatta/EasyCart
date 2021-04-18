@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape>
+            <solid android:color="@color/pin_location_button_border" />
+            <size android:width="5dp" />
+        </shape>
+    </item>
+
+    <!-- main color -->
+    <item android:drawable="@drawable/login_screen_bg"
+        android:bottom="2.5dp"
+        android:left="2.5dp"
+        android:right="2.5dp">
+        <shape>
+            <solid android:color="@android:color/darker_gray" />
+        </shape>
+    </item>
+
+    <!-- draw another block to cut-off the left and right bars -->
+    <item android:drawable="@drawable/login_screen_bg" android:bottom="20dp">
+        <shape>
+            <solid android:color="#2B2B2B" />
+        </shape>
+    </item>
+
+    <!--<item android:drawable="@drawable/login_screen_bg"
+        android:top="1dp" android:left="5dp" android:bottom="5dp" android:right="5dp">
+    </item>-->
+</layer-list>

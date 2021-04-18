@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnFilter"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                layout="@layout/nav_header_filter"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BY CATEGORY"
+                android:textStyle="bold"
+                android:textColor="@color/signup_button_color"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filter_cat_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/h1black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BY PRICE"
+                android:textStyle="bold"
+                android:textColor="@color/signup_button_color"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+            <com.rizlee.rangeseekbar.RangeSeekBar
+                android:id="@+id/rangeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:active="true"
+                app:minValue="0"
+                app:maxValue="200"
+                app:stepValue="10"
+                app:centerColor="@color/pin_location_button_bg"
+                app:sideColor="@color/pin_location_button_bg"
+                app:additionalTextMargin="6dp"
+                app:enableGradient="false"
+                app:roundedCorners="false"
+                app:showAdditionalText="above"
+                app:centerText=""
+                app:leftText="Min"
+                app:rightText="Max"
+                app:barHeight="5dp"
+                app:showThumbsText="below"
+                app:textColor="@android:color/black"
+                app:thumbsTextMargin="6dp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/h1black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BY RATING"
+                android:textStyle="bold"
+                android:textColor="@color/signup_button_color"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filter_rating_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="15dp"
+        android:text="Filter"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:background="@drawable/button_shop_bg"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

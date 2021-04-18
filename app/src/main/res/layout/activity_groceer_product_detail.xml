@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+       >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOfferText"
+        app:layout_constraintVertical_bias="0.105">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Product Detail"
+             android:layout_gravity="left"
+             android:textColor="@color/splash_welcome_text_color"
+             android:textStyle="bold"
+             android:textSize="20sp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topBrandcardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="7dp"
+            app:cardPreventCornerOverlap="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/thumbnail_color"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivProductDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+                </LinearLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+                <RatingBar
+                    android:id="@+id/ratingProduct"
+                    style="@android:style/Widget.Material.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:isIndicator="true"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:progressTint="@color/pin_location_button_bg"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/tvProductDetailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Lorem Ipsum"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:textColor="@color/splash_app_name_color"
+                    android:textSize="20sp"></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/layout_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <TextView
+                        android:id="@+id/tvProductDetailOfferPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="$12.00"
+                        android:textColor="@color/pin_location_button_bg"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <View
+                        android:id="@+id/crossViewProduuctDetail"
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/pin_location_button_bg"/>
+
+                    <TextView
+                        android:id="@+id/tvProductDetailActualPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$12.00"
+                        android:textColor="@color/splash_app_name_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_linearCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_price">
+
+                    <Button
+                        android:id="@+id/btnProdAddToCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/signup_button_color"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:text="ADD TO CART"
+                        android:visibility="visible"
+                        android:textColor="@color/color_white_text"
+                        android:textSize="15sp" />
+                    <RelativeLayout
+                        android:id="@+id/detailCartAddView"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/cart_layout_bg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_price">
+
+                        <Button
+                            android:id="@+id/btnpQtyMinus"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/signup_button_color"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:textColor="@color/white" />
+
+                        <EditText
+                            android:id="@+id/edtpQty"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/edt_white_bg"
+                            android:textColor="@color/splash_welcome_text_color"/>
+
+                        <Button
+                            android:id="@+id/btnpQtyAdd"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/signup_button_color"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnProdBuyNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@color/pin_location_button_bg"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:text="BUY NOW"
+                        android:textColor="@color/color_white_text"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="7dp"
+                android:padding="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_linearDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/browser_actions_divider_color"
+                        android:orientation="horizontal"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:weightSum="2"
+                        android:padding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_linearCart">
+
+                        <Button
+                            android:id="@+id/btnProdDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:text="Description"
+                            android:textAllCaps="false"
+                            android:textColor="@color/splash_welcome_text_color"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnProdDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:text="Detail"
+                            android:textAllCaps="false"
+                            android:textColor="@color/splash_welcome_text_color"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvProductDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:maxLines="20"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/splash_welcome_text_color"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_linearDetail" />
+                    <WebView
+                        android:id="@+id/productDetailWebView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/splash_welcome_text_color"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_linearDetail"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

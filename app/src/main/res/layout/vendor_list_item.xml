@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="7dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RatingBar
+            android:id="@+id/ratingVendor"
+            style="@android:style/Widget.Material.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/pin_location_button_bg"
+            android:rating="2"
+            android:stepSize="1"
+            android:clickable="false"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingVendor">
+
+            <ImageView
+                android:id="@+id/imgFood"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_shipping_color" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/splash_app_name_color"
+                android:text="Gorceer"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/btnVendorSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:text="@string/text_select"
+                android:background="@drawable/button_shop_bg"/>
+
+
+            <RelativeLayout android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Order"
+                        android:maxLines="2"
+                        android:textSize="10sp"
+                        android:paddingTop="5dp"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/splash_app_name_color"/>
+                    <TextView
+                        android:id="@+id/txtLastOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Order- 09/09/2020"
+                        android:maxLines="2"
+                        android:textSize="10sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/splash_app_name_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Order"
+                        android:textSize="10sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:maxLines="2"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/splash_app_name_color"/>
+
+                    <TextView
+                        android:id="@+id/txtTotalOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T00"
+                        android:textSize="10sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:maxLines="2"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/splash_app_name_color">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item><shape android:shape="rectangle">
+        <stroke android:width="0dp" android:color="@color/color_white_text" />
+
+        <solid android:color="@color/pin_location_button_bg" />
+
+
+        <size android:width="100dp" android:height="30dp"/>
+
+    </shape></item>
+
+</selector>

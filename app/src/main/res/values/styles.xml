@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pin_location_button_bg</item>
+        <item name="colorPrimaryDark">@color/pin_location_button_border</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/splash_app_name_color</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>-->
+
+</resources>

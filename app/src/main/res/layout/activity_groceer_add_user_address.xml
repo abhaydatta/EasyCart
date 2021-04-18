@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg"
+    tools:context=".activity.GroceerAddUserAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Customer Address"
+            android:hint=""
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_linearCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_price">
+
+            <EditText
+                android:id="@+id/edtCustomerFistName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:hint="First Name"
+                android:textColor="@color/splash_welcome_text_color"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtCustomerLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:hint="Last Name"
+                android:textColor="@color/splash_welcome_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:hint="Address"
+            android:maxLines="4"
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_linearCityState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_price">
+
+            <EditText
+                android:id="@+id/edtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:hint="City"
+                android:textColor="@color/splash_welcome_text_color"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtState"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:hint="State"
+                android:textColor="@color/splash_welcome_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_price">
+
+            <EditText
+                android:id="@+id/edtPinCode"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:focusable="false"
+                android:textColor="@color/splash_welcome_text_color"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:hint="Country"
+                android:focusable="false"
+                android:textColor="@color/splash_welcome_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:hint="Contact Number"
+            android:maxLines="4"
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:hint="Email Id "
+            android:maxLines="4"
+            android:textColor="@color/splash_welcome_text_color"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/button_shop_bg"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

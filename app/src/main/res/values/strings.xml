@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Groceer Cart</string>
+    <string name="splash_welcome_text">WELCOME TO</string>
+    <string name="splash_app_name">GROCEER CART</string>
+
+    <!-- Login and SingUp !-->
+    <string name="enter_mobile_text">Enter 10 digit Mobile Number</string>
+    <string name="login_input_text">Enter Mobile Number/Email ID</string>
+    <string name="or_text">OR</string>
+    <string name="text_login_with">LOGIN WITH</string>
+    <string name="text_fb">Facebook</string>
+    <string name="text_google"> Google</string>
+
+    <string name="facebook_app_id" translatable="false">1146385482430044</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1146385482430044</string>
+    <!--<string name="facebook_app_id" translatable="false">206817042798010</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb206817042798010</string>-->
+
+    <string name="google_web_application_id" translatable="false">1035462508980-ufrjij1osq0g99i8qm3o2c323of7u5ad.apps.googleusercontent.com</string>
+
+
+    <!-- Pin Screen !-->
+    <string name="enter_pincode">Enter your Pincode</string>
+    <string name="button_location_test">Current Location</string>
+
+    <!-- Vendor List Screen !-->
+    <string name="select_vendor">SELECT VENDOR</string>
+    <string name="select_vendor_query_hint">Search Vendor</string>
+    <string name="text_select">Select</string>
+
+    <!-- Otp SignUp Screen !-->
+    <string name="text_signup_otp_title">Signup Using OTP</string>
+    <string name="text_signup_otp_subtitle">Please check the OTP sent to your Mobile Number</string>
+    <string name="text_change_button">Change</string>
+    <string name="text_enter_otp">Enter OTP</string>
+    <string name="text_resend_otp">Resend OTP</string>
+    <string name="text_signuup_button">Signup</string>
+    <string name="text_otp_success">OTP sent successfully</string>
+    <string name="title_activity_groceer_home">GroceerHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">HOME</string>
+    <string name="menu_vendor">VENDOR</string>
+    <string name="menu_cart">MY CART</string>
+    <string name="menu_login">LOGIN</string>
+    <string name="menu_setting">ACCOUNT</string>
+
+
+    <string name="text_location">Location</string>
+    <string name="text_continue">CONTINUE</string>
+    <string name="text_bank">BANK</string>
+    <string name="text_offer">OFFERS</string>
+    <string name="text_daily_essenetail">DAILY ESSENTIALS</string>
+    <string name="text_trending">TRENDING</string>
+    <string name="text_products">PRODUCTS</string>
+    <string name="text_query">If you have any queries please call us</string>
+    <string name="text_copyright">2020-2021 COPY RIGHT BY GROCEER CART POWERED BY ADROTI IT SOLUTION PRIVATE LIMITED</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="select_drawer_search">Search Here</string>
+    <string name="text_delivery">Tomarrow 9:00am to 1.00pm</string>
+
+    <!-- Account Screen !-->
+    <string name="text_delivery_status">Delivery Slots</string>
+    <string name="text_hello">Hello</string>
+    <string-array name="account_item">
+        <item>Your Orders</item>
+        <item>My Addresses</item>
+        <item>Review &amp; Ratings</item>
+        <item>Your Profile</item>
+        <item>Change Language</item>
+        <item>Change Pincode</item>
+        <item>Customer Service</item>
+        <item>Logout</item>
+
+    </string-array>
+
+    <!--<string-array name="account_item">
+        <item>Your Orders</item>
+        <item>Wish List</item>
+        <item>Payment Methods</item>
+        <item>Change Password</item>
+        <item>My Wallet</item>
+        <item>My Addresses</item>
+        <item>Review &amp; Ratings</item>
+        <item>Your Profile</item>
+        <item>Change Language</item>
+        <item>Customer Service</item>
+    </string-array>-->
+    <string name="title_activity_groceer_item_list">GroceerItemListActivity</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_groceer_prodct_list_filter">GroceerProdctListFilterActivity
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

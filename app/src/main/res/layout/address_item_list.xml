@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addressLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/select_colot">
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Customer Name "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/splash_welcome_text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvCustomerArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Customer Name "
+        android:gravity="center"
+        android:maxLines="3"
+        android:textColor="@color/splash_welcome_text_color"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerName"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCustomerCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Customer Name "
+        android:gravity="center"
+        android:maxLines="3"
+        android:textColor="@color/splash_welcome_text_color"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerArea"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCustomerPinState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Customer Name "
+        android:gravity="center"
+        android:maxLines="3"
+        android:textColor="@color/splash_welcome_text_color"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerCity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivAddressSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/select"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCustomerArea"
+        app:layout_constraintStart_toEndOf="@+id/tvCustomerName"
+
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
