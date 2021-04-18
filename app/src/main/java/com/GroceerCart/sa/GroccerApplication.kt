@@ -8,6 +8,7 @@ class GroccerApplication : Application() {
     override fun onCreate() {
         super.onCreate()
        FacebookSdk.sdkInitialize(applicationContext)
+	 //  FacebookSdk.sdkInitialize(applicationContext)
        AppEventsLogger.activateApp(this)
     }
 }
